@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MyButton" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">#4b0082</item>
+        <item name="colorButtonNormal">#FF1493</item>
+    </style>
+
+</resources>

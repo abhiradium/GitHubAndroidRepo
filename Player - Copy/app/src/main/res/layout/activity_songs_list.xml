@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/relativeSongListLayout"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/colorAccent" android:orientation="vertical"
+    android:theme="@style/Theme.AppCompat.Light.DarkActionBar" tools:context=".SongsList">
+
+    <ListView android:id="@+id/songsList" android:layout_width="match_parent"
+        android:layout_height="535dp" android:layout_above="@+id/imageView"
+        android:layout_alignParentLeft="true" android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" android:background="@color/song_list_background" />
+
+    <ImageView android:id="@+id/imageView" android:layout_width="67dp" android:layout_height="67dp"
+        android:layout_alignParentBottom="true" android:layout_alignParentStart="true"
+        app:srcCompat="@mipmap/album_art" />
+
+    <Button android:id="@+id/nextSmall" android:layout_width="30dp" android:layout_height="30dp"
+        android:layout_alignParentBottom="true" android:layout_alignParentEnd="true"
+        android:layout_marginBottom="17dp" android:background="@mipmap/next_small" />
+
+    <Button android:id="@+id/playSmall" android:layout_width="30dp" android:layout_height="30dp"
+        android:layout_alignStart="@+id/pause_small" android:layout_alignTop="@+id/nextSmall"
+        android:background="@mipmap/play_small" />
+
+    <Button android:id="@+id/pause_small" android:layout_width="30dp" android:layout_height="30dp"
+        android:layout_alignParentEnd="true" android:layout_alignTop="@+id/nextSmall"
+        android:layout_marginEnd="37dp" android:background="@mipmap/pause_small"
+        android:visibility="invisible" />
+
+    <TextView android:id="@+id/songPlaying" android:layout_width="226dp"
+        android:layout_height="67dp" android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/imageView" android:layout_toLeftOf="@+id/pause_small"
+        android:layout_toRightOf="@+id/imageView" android:background="@color/colorAccent"
+        android:gravity="left|center" />
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/song_list_background" android:orientation="vertical"
+    android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+
+    <TextView android:id="@+id/songName" android:layout_width="match_parent"
+        android:layout_height="45dp" android:background="@color/song_list_background"
+        android:fadingEdge="horizontal" android:gravity="left|center_horizontal"
+        android:paddingLeft="10dp" android:paddingTop="10dp" android:requiresFadingEdge="horizontal"
+        android:singleLine="true" android:text="TextView" android:textColor="@android:color/white"
+        android:textSize="20sp" android:typeface="normal" />
+
+</LinearLayout>
